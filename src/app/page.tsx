@@ -7,7 +7,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Zap, Graph, Quote } from 'lucide-react';
+import { Zap } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "hero", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" },
@@ -65,7 +65,7 @@ export default function Home() {
           <FeatureCardTwo
             features={[
               { title: "User-Friendly Interface", description: "Navigate our tools with ease.", icon: Zap, button: { text: "Try Now", href: "https://example.com" } },
-              { title: "Advanced Analytics", description: "Gain insights quickly.", icon: Graph, button: { text: "Learn More", href: "https://example.com" } }
+              { title: "Advanced Analytics", description: "Gain insights quickly.", icon: Zap, button: { text: "Learn More", href: "https://example.com" } }
             ]}
             title="Features at a Glance"
             className="bg-blue-50"
@@ -76,7 +76,7 @@ export default function Home() {
       <div id="testimonial" data-section="testimonial" className="scroll-mt-24 bg-blue-50">
         <div className="mx-auto px-4 md:px-6">
           <TestimonialCardTwo
-            testimonials={[{ id: "1", name: "Sarah Mitchell", role: "Director of Operations", testimonial: "Peak has transformed our workflow with its intuitive design and robust features.", icon: Quote }]}
+            testimonials={[{ id: "1", name: "Sarah Mitchell", role: "Director of Operations", testimonial: "Peak has transformed our workflow with its intuitive design and robust features.", icon: Zap }]}
             title="Customer Reviews"
             className="bg-blue-50"
             textBoxTitleClassName="text-blue-900"
